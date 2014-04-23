@@ -6,4 +6,4 @@ To-Do
 * (DONE) Email collection
 * Auto email confirm
 * donation survey
-* user input A/B testing
+* user input A/B testing a
