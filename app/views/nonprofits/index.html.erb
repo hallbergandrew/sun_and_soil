@@ -1,0 +1,8 @@
+<h1> Choose a Charity </h1>
+
+<% @nonprofits.each do |nonprofit| %>
+<%= link_to nonprofit.name, nonprofit_path(nonprofit) %>
+<% end %>
+
+<%= render "form" %>
+
