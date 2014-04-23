@@ -31,6 +31,7 @@ gem 'paperclip'
 gem 'rest-client'
 gem 'sass-rails'
 gem 'bootstrap-sass'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 group :test, :development do
   gem 'dotenv-rails'
