@@ -1,0 +1,10 @@
+<%= form_for @email do |f| %>
+    <div class="form-group">
+      <%= f.label :email %></br>
+      <%= f.text_field :email %>
+    </div>
+     <div class="form-group">
+     <%= f.submit "Add Email", :class => "btn btn-info" %>
+    </div>
+    <% end %>
+</div>
