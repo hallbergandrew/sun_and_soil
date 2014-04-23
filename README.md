@@ -7,11 +7,7 @@ To-Do
 * Auto email confirm
 * donation survey
 * user input A/B testing a
-
-
-##Epicodus Assignment
-
-Non-profit donations
+#Non-profit donations
 Let's make a website where users can choose non-profits to make donations to.
 
 To start off with, create CRUD/L functionality for non-profits Don't worry about user auth or images yet; just make this really simple so we can get to the new stuff quickly.
