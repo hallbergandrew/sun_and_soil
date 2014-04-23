@@ -8,7 +8,7 @@
   // ...('<%= ENV['PUBLISHABLE_KEY'] %>');
 
   var stripeResponseHandler = function(status, response) {
-      var $form = $('#payment-form');
+      var $form = $('#new_charge');
 
       if (response.error) {
         // Show the errors on the form
@@ -27,14 +27,21 @@
 
 
 jQuery(function($) {
-  $('#payment-form').submit(function(event) {
+  $('#new_charge').submit(function(event) {
 
     var $form = $(this);
 
     // Disable the submit button to prevent repeated clicks
     $form.find('button').prop('disabled', true);
 
-    Stripe.card.createToken($form, stripeResponseHandler);
+    var card = {
+      number: $('#card_number').val(),
+      cvc: $('#card_code').val(),
+      expMonth: $('#card_month').val(),
+      expYear: $('#card_year').val()
+    }
+
+    Stripe.card.createToken(card, stripeResponseHandler);
 
     // Prevent the form from submitting with the default action
     return false;
@@ -44,6 +51,7 @@ jQuery(function($) {
 </head>
 
 <%= form_for @charge do |f| %>
+<span class="payment-errors"></span>
   <% if @charge.errors.any? %>
     <div class="error_messages">
       <h2><%= pluralize(@charge.errors.count, "error") %> prohibited this charge from being saved:</h2>
@@ -59,8 +67,8 @@ jQuery(function($) {
     <%= f.text_field :email %>
   </div>
   <div class="field">
-      <%= label_tag :card, "Credit Card Number " %>
-      <%= text_field_tag :card, nil, name: nil %>
+      <%= label_tag :card_number, "Credit  Number " %>
+      <%= text_field_tag :card_number, nil, name: nil %>
   </div>
   <div class="field">
       <%= label_tag :card_code, "Security Code on Card (CVV)" %>
