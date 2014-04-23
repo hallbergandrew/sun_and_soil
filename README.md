@@ -16,3 +16,4 @@ Now, non-profits want the option to have their donors opt for monthly donations.
 Not everyone wants to donate $15/month. Let non-profits create different donation tiers by adding subscriptions. Hint: A non-profit has many subscriptions.
 Finally, we need to actually pay out to the non-profits. Use Stripe transfers to pay out the donations to the non-profits.
 Oh, and maybe we should add user auth at this point :)
+
