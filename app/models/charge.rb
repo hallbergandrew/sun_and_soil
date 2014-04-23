@@ -1,4 +1,6 @@
 class Charge < ActiveRecord::Base
+
+  before_create :payment
   belongs_to :nonprofit
   def payment
     # Amount in cents

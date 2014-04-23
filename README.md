@@ -7,6 +7,12 @@ To-Do
 * Auto email confirm
 * donation survey
 * user input A/B testing a
+
+Stripe custom form example:
+https://gist.github.com/briancollins/6365455
+
+
+
 #Non-profit donations
 Let's make a website where users can choose non-profits to make donations to.
 

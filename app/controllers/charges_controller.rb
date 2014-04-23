@@ -1,5 +1,6 @@
 class ChargesController < ApplicationController
-  def new
+  def index
+    @charge = Charge.new
   end
 
 end
