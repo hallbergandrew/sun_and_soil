@@ -1,35 +1,64 @@
+
+body {
+  color: #380F06;
+}
+
+
 .call-to-action {
   .jumbotron {
     margin-bottom: 0px;
-    height: 750px;
-    background-color: #FDFDFD;
+    height: 400px;
+    background-color: #FF8002;
+  }
+  h1 {
+  color: #380F06;
+  }
+  .right {
+  text-align: right;
+  color: white;
   }
 }
 .first {
   .jumbotron {
   margin-bottom: 0px;
-  background-color: #396A92;
+  background-color: #FF8002;
   height: 750px;
+  }
+  h1 {
+  color: white;
+  }
+  .center {
+  text-align: center;
   }
 }
 .second {
   .jumbotron {
     margin-bottom: 0px;
     height: 750px;
-    background-color: #FDFDFD;
+    background-color: #E22B00;
+    color: #380F06;
+  }
+  .white {
+   color: white;
+  }
+  ul {
+  list-style-type: none;
+  }
+  .black {
+    color: darkgray;
   }
 }
 .third {
   .jumbotron {
     margin-bottom: 0px;
     height: 750px;
-    background-color: #091D42;
+    background-color: #FF8002;
   }
 }
 .join {
   .jumbotron {
     margin-bottom: 0px;
-    height: 150px;
+    height: 180px;
     background-color: #FDFDFD;
   }
   text-align: center;
@@ -41,3 +70,4 @@
     background-color: #EEE;
   }
 }
+

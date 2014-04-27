@@ -1,42 +1,71 @@
-<h1> Index page </h1>
-
-
-
-<%= content_for(:title, "Landing Page") %>
+<%= content_for(:title, "Sign Up") %>
 <div class="call-to-action">
   <div class="jumbotron">
-     <h1> Have you ever wanted to change the world? </h1>
-      <h3> Charity infinity strives to utilize the power of crowd sourcing in order </h3>
+     <h1 class="firsthead"> Love locally sourced food? </h1>
+     <h2 class="right"> Sun and Soil is your source </h2>
+
+     <h2> Join now for updates! </h2>
+     <h3><%= render "email" %></h3>
+
+
+      <h3> Sun and soil is a community based company that helps local businesses source their food locally.
+      By joining our mailing list, we will make sure you hear about the beta release and upcoming events we will be holding! </h3>
+
       <br><br>
-      <%= link_to "To Charities", nonprofits_path, :class => "btn btn-success" %>
 
-      <br><br><br>
-      <p> Join our mailing list to hear about the beta release: </p>
-            <%= render "email" %>
-
-
-
+      <br>
 
   </div>
 </div>
-
 <div class="first">
   <div class="jumbotron">
-     <h1> Our Process </h1>
-      <h3> Here is a ton of info about our company. This is the public facing page. </h3>
-      <%= link_to "Donate Now", root_path, :class => "btn btn-info" %>
+    <a name="about"></a>
+     <h1> Keepin' it Fresh </h1>
+      <h3> Sun and soil is a local Portland Startup that is working to create outragiously excellent local cuisine that supports the local community.</h3>
+      <br>
+      <span class="center">
+      <div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <%= image_tag "http://media.npr.org/assets/img/2012/07/25/tomatoes-f55973c9c7e2cfb66737e3ee185b3bbab57dcd5c-s6-c30.jpg" %>
+    </a>
+  </div>
+</div>
+</span>
+
+      <br>
+      <h3> We are looking for companies that are interested in giving back to the community and participating in the sustainable agricultural movement. </h3>
+      <br>
+      <br>
+      <%= link_to "Donate Now", root_path, :class => "btn btn-info btn-lg" %>
   </div>
 </div>
 
 <div class="second">
   <div class="jumbotron">
-     <h1> Who we help </h1>
-      <h3> Here is a ton of info about our company. This is the public facing page. </h3>
+    <a name="second"></a>
+     <h1> Products </h1>
+      <p> Our current seasonal product inspired by the Portland community is: </p>
+        <ul>
+          <li>
+            <h3 class="white"> Salsa NW: The Burnside Burn</h3>
+          </li>
+        </ul>
+<br>
+        <h2> Monthly Subscription <h2>
+          <ul>
+            <li>   Price: $40.00    |    Feeds: 8-10   </li><br>
+            <li>   Price: $80.00    |    Feeds: 20-30   </li><br>
+            <li>   Price: Custom    |            <a href="#fourth" class="black">Contact Us</a>
+  </li><br>
+
+          </ul>
   </div>
 </div>
 
 <div class="third">
   <div class="jumbotron">
+    <a name="third"></a>
      <h1> Analytics </h1>
       <h3> Here is a ton of info about our company. This is the public facing page. </h3>
   </div>
@@ -50,6 +79,7 @@
 
 <div class="footer">
   <div class="jumbotron">
+    <a name="fourth"></a>
      <h1> Analytics </h1>
       <h3> Here is a ton of info about our company. This is the public facing page. </h3>
   </div>

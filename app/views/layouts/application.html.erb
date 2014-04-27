@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>OnePageApp</title>
+  <title><%= content_for?(:title) ? yield(:title) : "Sun and Soil" %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
   <%= csrf_meta_tags %>
 
   <%= render("/layouts/navbar") %>
+
 </head>
 <body>
   <%= flash[:alert] %>

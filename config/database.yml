@@ -1,12 +1,12 @@
 
 development:
   adapter: postgresql
-  database: one_page_app_development
+  database: sun_development
 
 test:
   adapter: postgresql
-  database: one_page_app_test
+  database: sun_test
 
 production:
   adapter: postgresql
-  database: one_page_app_production
+  database: sun_production
