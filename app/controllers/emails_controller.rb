@@ -14,6 +14,7 @@ class EmailsController < ApplicationController
   def create
     @email = Email.new(email_params)
     if @email.save
+      flash[:notice] = "Thank you for adding your email!"
       redirect_to emails_path
     else
       render 'new'
